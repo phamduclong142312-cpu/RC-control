@@ -90,14 +90,13 @@ void TRIM_SERVO(){
   myData.trim = constrain(map(value3, 0, 4095, 0, 180),0,180); 
 }
 
-int x=0;
-void BAOGAY(){
-  oled.setTextSize(1);
-  oled.setCursor(x,47);
-  oled.print("Bao gay vcl");
-  x+=2;
-  if(x>SCREEN_WIDTH) x=0;
-}
+//int x=0;
+//void BAOGAY(){
+//  oled.setTextSize(1);
+//  oled.setCursor(x,47);
+//  oled.print("Bao gay vcl");
+//  x+=2;
+//  if(x>SCREEN_WIDTH) x=0;}
 
 void loop(){
   oled.clearDisplay();
