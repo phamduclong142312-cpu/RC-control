@@ -63,9 +63,10 @@ void setup(){
 
 int AVGanalogRead(int pot){ //hàm lọc trung bình không hiệu quả gì mấy, có gì anh coi thử
   long sum = 0;
-  const int samp = 10;
+  const int samp = 100;
   for(int i=0; i < samp; i++){
     sum += analogRead(pot);
+    delayMicroseconds(200);
   }
   return sum/samp;
 }
